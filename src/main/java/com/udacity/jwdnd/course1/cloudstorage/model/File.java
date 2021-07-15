@@ -11,6 +11,15 @@ public class File {
     Integer userId;
     Blob fileData;
 
+    public File(Integer fileId, String fileName, String contentType, String fileSize, Integer userId, Blob fileData) {
+        this.userId = userId;
+        this.fileId = fileId;
+        this.fileName = fileName;
+        this.contentType = contentType;
+        this.fileSize = fileSize;
+        this.fileData = fileData;
+    }
+
     public Integer getFileId() {
         return fileId;
     }
